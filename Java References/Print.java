@@ -1,13 +1,20 @@
 public class Print {
     public static void main(String[] args) {
-        System.out.print("Hello Universe!");
-        System.out.println();
-        System.out.println("Hello World!");
-
+        // Print with new line
+        System.out.println("Hello, Earth!");
+        // Print without new line
+        System.out.print("Hello, Universe!");
+        // Manual New Line
+        System.out.println("\nHello, World!"); 
         // Combining string
-        System.out.println("Hello World!" + " " + "Hello Universe!");
+        String earth = "Hello, Earth!";
+        String universe = "Hello, Universe!";
+        System.out.println(earth + " " + universe);
 
         // Arithmetic operation
+        System.out.println(5 % 5);
+        System.out.println(5 - 5);
+        System.out.println(5 / 5);
         System.out.println(5 + 5);
         System.out.println(5 * 5);
         
