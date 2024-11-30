@@ -6,7 +6,7 @@ public class DataTypes {
         short myShort = -32768; // 4 digits
         System.out.println(myShort);
 
-        int myInt = -2147483648; // 9 digits
+        int myInt = -2147483648; // 9 digits (Up to a billion)
         System.out.println(myInt);
 
         long myLong = -9223372036854775808L; // 18 digits
