@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class ArraySort {
-public static void main(String[] args) {
+public class SelectionSort {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         // Input size of array from user then create the array
         int arraySize = getIntNumber(input, "Define the size of the array: ");
         int[] numberList = new int[arraySize];
 
-        // Fill array with input
+        // Fill array with elements by user
         for (int i = 0; i < numberList.length; i++) {
             numberList[i] = getIntNumber(input, "Input array element: ");
         }
