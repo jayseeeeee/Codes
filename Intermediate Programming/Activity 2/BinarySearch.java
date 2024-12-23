@@ -23,39 +23,35 @@ public class BinarySearch {
 
         // Must be decrement by one since array search starts from 0 (or it will be out of bounds)
         int high = numberList.length - 1;
-        System.out.println(1/2);
+
         // Check if search value is within the high and low values
         while (true) {
             // Get the new center value by getting median of high and low
             median = (high + low) / 2;
 
-            System.out.println("MEDIAN/LOW/HIGH: " + median + "/" + low + "/" + high);
-            
             // Check if value is exactly the median
             if (search == numberList[median]) {
                 System.out.println(search + " is found at the index " + (median));
                 break;
-            // Display search value not found if value is out of range
+
+            // Display not found if value is out of range
             } else if (search > numberList[high] || search < numberList[low]) {
                 System.out.println(search + " is not found in the array");
                 break;
-            }
 
             // Check if the value is HIGHER than the MEDIAN
-            if (search > numberList[median]) {
+            } else if (search > numberList[median]) {
                 
                 // Set a HIGHER LOW value since the search value is HIGH
                 low = median + 1;
             
-            // Check if the value is LOWER than the MEDIAN
-            } else if (search < numberList[median]) {
+            // Check if the value is LOWER than the MEDIAN if (search < numberList[median])
+            } else {
 
                 // Set a LOWER HIGH value since the search value is LOW
                 high = median - 1;
             }
         }
-
-        input.close();
     }
 
     // Forces user to enter correct value and avoids crash with other characters
